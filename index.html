@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - GardenGenius Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Styles for Background Image */
+        body {
+            font-family: 'Arial, sans-serif';
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: url('C:/Users/ashis.SHREEHANUMAN/OneDrive/Desktop/Picture5.jpg') no-repeat center center/cover;
+            background-attachment: fixed; /* Fixed background */
+            background-size: cover; /* Ensure the image covers the entire background */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for header */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: relative;
+            z-index: 100; /* Ensure header is above the background image */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for hero section */
+            color: white;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1; /* Ensure content is above the background image */
+        }
+
+        .hero-text {
+            z-index: 2;
+            max-width: 50%;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #fff;
+            max-width: 80%;
+            line-height: 1.5;
+        }
+
+        .features {
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for features section */
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .features h2 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #4CAF50;
+        }
+
+        .features-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex: 1 1 30%;
+            margin: 20px;
+            background-color: #f0f0f0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover img {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for footer */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 100; /* Ensure footer is above the background image */
+        }
+
+        /* BotPress Web Chat Integration */
+        #webchat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to GardenGenius Bot</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Your Ultimate Gardening Companion</h2>
+                <p>GardenGenius Bot is designed to assist both novice and experienced gardeners with personalized plant care advice, identification, and a tailored gardening calendar. Whether you're tending to a lush terrace garden or nurturing domestic plants, GardenGenius Bot provides expert tips on watering, pruning, and harvesting, helping your plants thrive all year round. With its advanced image recognition, you can easily identify unknown plants and get detailed care instructions. Let GardenGenius Bot transform your gardening experience into a seamless and flourishing adventure.</p>
+            </div>
+        </section>
+        <section class="features">
+            <h2>Why Choose GardenGenius Bot?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="C:/Users/ashis.SHREEHANUMAN/OneDrive/Desktop/Picture1.jpg" alt="Personalized Advice">
+                    <h3>Personalized Plant Care</h3>
+                    <p>Get expert tips on watering, pruning, and harvesting, helping your plants thrive all year round.</p>
+                </div>
+                <div class="feature">
+                    <img src="C:/Users/ashis.SHREEHANUMAN/OneDrive/Desktop/Picture2.jpg" alt="Image Recognition">
+                    <h3>Advanced Image Recognition</h3>
+                    <p>Easily identify unknown plants and get detailed care instructions with our advanced image recognition technology.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 GardenGenius Bot. All rights reserved.</p>
+    </footer>
+
+    <!-- BotPress Web Chat Integration -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/96be6309-4e00-4440-a993-61727351f982/webchat/config.js" defer></script>
+</body>
+
+</html>

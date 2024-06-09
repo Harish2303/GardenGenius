@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GardenGenius Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Styles */
+        body {
+            font-family: 'Arial, sans-serif';
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: url('C:/Users/ashis.SHREEHANUMAN/OneDrive/Desktop/Picture5.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: relative;
+            z-index: 100;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        main {
+            padding: 50px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        main h2 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #4CAF50;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            flex: 1 1 300px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .contact-item h3 {
+            font-size: 1.8em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover h3 {
+            color: #2E8B57;
+        }
+
+        .contact-item p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover p {
+            color: #555;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact GardenGenius Bot</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="Location.jpg" alt="Location Icon">
+                <h3>Visit Us</h3>
+                <p>Pune, Maharashtra, India</p>
+            </div>
+            <div class="contact-item">
+                <img src="Mail.jpg" alt="Email Icon">
+                <h3>Email Us</h3>
+                <p>contact@gardengeniusbot.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="Phone.jpg" alt="Phone Icon">
+                <h3>Call Us</h3>
+                <p>+91 8462359568</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GardenGenius Bot. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
